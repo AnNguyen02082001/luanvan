@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       bill_id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
       wallet_id: { type: DataTypes.INTEGER, allowNull: false },
-      employee_id: { type: DataTypes.INTEGER, allowNull: false },
+      employee_id: { type: DataTypes.INTEGER, allowNull: true },
       customer_id: { type: DataTypes.INTEGER, allowNull: false },
       delivery_status: { type: DataTypes.TEXT, allowNull: false },
       total: { type: DataTypes.DECIMAL(10, 2), allowNull: false },

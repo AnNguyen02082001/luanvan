@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       customer_id: { type: DataTypes.INTEGER, primaryKey: true },
       product_id: { type: DataTypes.INTEGER, primaryKey: true },
-      bill_id: { type: DataTypes.INTEGER, allowNull: false },
+      bill_id: { type: DataTypes.INTEGER, allowNull: true },
       price: { type: DataTypes.DECIMAL(10, 2), allowNull: false },
       quantity_product: { type: DataTypes.INTEGER, allowNull: false },
     },
